@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multikart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="relative">
+    <!-- Header -->
+    <header class="w-full shadow-sm sticky top-0 bg-white z-30 px-4 lg:px-24">
+      <div class="py-7 flex items-center justify-between">
+        <!-- Left Side -->
+        <div class="flex items-center space-x-4">
+          <!-- mobile Menu Icon -->
+          <span
+            id="menu-btn"
+            class="material-icons flex md:hidden text-gray-800 cursor-pointer text-3xl"
+          >
+            menu
+          </span>
+          <!-- Logo -->
+          <div class="flex items-center space-x-1">
+            <img
+              src="./Ultikar images/logo.png"
+              alt="Multikart Logo"
+              class="h-8"
+            />
+          </div>
+        </div>
+
+        <!-- nav link to icons -->
+        <div class="flex items-center space-x-16 text-gray-600">
+          <nav class="hidden md:flex space-x-10 text-lg text-gray-900">
+            <a href="#" class="hover:text-teal-500">Home</a>
+            <a href="#" class="hover:text-teal-500">Feature</a>
+            <a href="#" class="hover:text-teal-500">Shop</a>
+            <a href="#" class="hover:text-teal-500">Product</a>
+            <a href="#" class="hover:text-teal-500">Pages</a>
+            <a href="#" class="hover:text-teal-500">Blog</a>
+          </nav>
+
+          <div class="flex items-center space-x-5">
+            <span
+              class="material-icons cursor-pointer text-2xl hover:text-teal-500"
+              >search</span
+            >
+            <span
+              class="material-icons cursor-pointer text-2xl hover:text-teal-500"
+              >settings</span
+            >
+            <div class="relative hover:text-teal-500">
+              <span class="material-icons cursor-pointer text-2xl"
+                >shopping_cart</span
+              >
+              <span
+                class="absolute -top-2 -right-2 bg-teal-400 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full"
+                >2</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black bg-opacity-40 hidden z-40"
+    ></div>
+    <div
+      id="mobile-menu"
+      class="fixed top-0 left-0 w-64 h-full bg-white shadow-md transform -translate-x-full transition-transform duration-300 z-50"
+    >
+      <div class="p-4 flex items-center justify-between border-b">
+        <img src="./Ultikar images/logo.png" alt="Multikart Logo" class="h-8" />
+        <span id="close-btn" class="material-icons cursor-pointer text-2xl"
+          >close</span
+        >
+      </div>
+      <nav class="flex flex-col space-y-4 p-4 text-gray-700 font-medium">
+        <a href="#" class="hover:text-teal-500">Home</a>
+        <a href="#" class="hover:text-teal-500">Feature</a>
+        <a href="#" class="hover:text-teal-500">Shop</a>
+        <a href="#" class="hover:text-teal-500">Product</a>
+        <a href="#" class="hover:text-teal-500">Pages</a>
+        <a href="#" class="hover:text-teal-500">Blog</a>
+      </nav>
+    </div>
+
+    <main>
+      <!-- banner -->
+      <section>
+        <img
+          src="./Ultikar images/salider.png"
+          alt="Banner Image"
+          class="w-full object-cover"
+        />
+      </section>
+
+      <!-- category  -->
+      <section class="py-16 bg-white">
+        <div class="px-4 lg:px-24">
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 text-center"
+          >
+            <div class="flex flex-col items-center">
+              <div
+                class="w-20 h-20 flex items-center justify-center rounded-full border border-gray-300 hover:bg-[#2dd4bf] transition"
+              >
+                <img
+                  src="./Ultikar images/COVID.png"
+                  alt="COVID"
+                  class="w-10 h-10"
+                />
+              </div>
+              <p
+                class="mt-4 font-bold text-sm text-gray-800 hover:text-[#2dd4bf]"
+              >
+                COVID
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div
+                class="w-20 h-20 flex items-center justify-center rounded-full border border-gray-300 hover:bg-[#2dd4bf] transition"
+              >
+                <img
+                  src="./Ultikar images/DIABETIC.png"
+                  alt="Diabetic"
+                  class="w-10 h-10"
+                />
+              </div>
+              <p
+                class="mt-4 font-bold text-sm text-gray-800 hover:text-[#2dd4bf]"
+              >
+                DIABETIC
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div
+                class="w-20 h-20 flex items-center justify-center rounded-full border border-gray-300 hover:bg-[#2dd4bf] transition"
+              >
+                <img
+                  src="./Ultikar images/EYE CARE.png"
+                  alt="Eye Care"
+                  class="w-10 h-10"
+                />
+              </div>
+              <p
+                class="mt-4 font-bold text-sm text-gray-800 hover:text-[#2dd4bf]"
+              >
+                EYE CARE
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div
+                class="w-20 h-20 flex items-center justify-center rounded-full border border-gray-300 hover:bg-[#2dd4bf] transition"
+              >
+                <img
+                  src="./Ultikar images/DIET.png"
+                  alt="Diet"
+                  class="w-10 h-10"
+                />
+              </div>
+              <p
+                class="mt-4 font-bold text-sm text-gray-800 hover:text-[#2dd4bf]"
+              >
+                DIET
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div
+                class="w-20 h-20 flex items-center justify-center rounded-full border border-gray-300 hover:bg-[#2dd4bf] transition"
+              >
+                <img
+                  src="./Ultikar images/MOM & KIDS.png"
+                  alt="Mom & Kids"
+                  class="w-10 h-10"
+                />
+              </div>
+              <p
+                class="mt-4 font-bold text-sm text-gray-800 hover:text-[#2dd4bf]"
+              >
+                MOM & KIDS
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div
+                class="w-20 h-20 flex items-center justify-center rounded-full border border-gray-300 hover:bg-[#2dd4bf] transition"
+              >
+                <img
+                  src="./Ultikar images/SKIN CARE.png"
+                  alt="Skin Care"
+                  class="w-10 h-10"
+                />
+              </div>
+              <p
+                class="mt-4 font-bold text-sm text-gray-800 hover:text-[#2dd4bf]"
+              >
+                SKIN CARE
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        
+      </section>
+    </main>
+
+    <!-- Script -->
+    <script src="./Ultikar images/index.js"></script>
+  </body>
+</html>
