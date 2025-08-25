@@ -20,3 +20,4 @@ overlay.addEventListener("click", () => {
   mobileMenu.classList.add("-translate-x-full");
   overlay.classList.add("hidden");
 });
+
